@@ -70,6 +70,10 @@ feature_columns = [
 ] + [col for col in sales_long.columns if 'event_' in col]
 
 final_dataset = sales_long[['id', 'date', 'sales'] + feature_columns]
-final_dataset.to_csv("engineered_features.csv", index=False)
+final_dataset.to_parquet("engineered_features.parquet", index=False)
 
-print("Feature engineering completed. Dataset saved as 'engineered_features.csv'.")
+
+print("Submission file created: 'submission.parquet'")
+
+
+print("Feature engineering completed. Dataset saved as 'engineered_features.parquet'.")
