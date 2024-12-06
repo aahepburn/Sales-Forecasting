@@ -24,7 +24,7 @@ sales_lag_1: Sales from 1 day ago.
 sales_lag_7: Sales from 7 days ago.
 sales_lag_28: Sales from 28 days ago (captures weekly and monthly patterns).
 
-##4. Rolling Features
+## 4. Rolling Features
 Aggregate metrics over a rolling window of days:
 
 rolling_mean_7: Average sales over the last 7 days.
